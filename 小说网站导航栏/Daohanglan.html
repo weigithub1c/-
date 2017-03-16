@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>起点网站浏览器</title>
+		
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#span_2").mouseover(
+					function() {
+						$("#span_2 a img").attr("src", "img/b_2.jpg");
+					}
+				)
+				$("#span_2").mouseout(
+					function() {
+						$("#span_2 a img").attr("src", "img/b_1.jpg");
+					}
+				)
+				
+				$("#div_li3 div").mouseover(
+					function() {
+						$("#div_li3 div a img").attr("src", "img/b_9.png");
+					}
+				)
+				$("#div_li3 div").mouseout(
+					function() {
+						$("#div_li3 div a img").attr("src", "img/b_10.png");
+					}
+				)
+				
+				$("#div_li4 div").mouseover(
+					function() {
+						$("#div_li4 div a img").attr("src", "img/b_11.png");
+					}
+				)
+				$("#div_li4 div").mouseout(
+					function() {
+						$("#div_li4 div a img").attr("src", "img/b_12.png");
+					}
+				)
+				
+				$("#div_top #div_2 ul #li_3").mouseover(
+					function() {
+						$("#div_top #div_2 ul #li_3 img").attr("src", "img/b_14.png");
+					}
+				)
+				$("#div_top #div_2 ul #li_3").mouseout(
+					function() {
+						$("#div_top #div_2 ul #li_3 img").attr("src", "img/b_15.png");
+					}
+				)
+				
+				$("#div_top #div_serach form input").focusin(
+					function(){
+						$("#div_top #div_serach form input").addClass("aaa");
+					}
+				)
+				$("#div_top #div_serach form input").focusout(
+					function(){
+						$("#div_top #div_serach form input").removeClass("aaa");
+					}
+				)
+			})
+		</script>
+		
+		<style type="text/css">
+			ul,li,p,div,dl,dt,dd,body,form,input,button {margin: 0;padding: 0;}
+			
+			body {font-family: "微软雅黑";font-size: 14px;background-image: url("img/bg_01.png");}
+			
+			#div_top {margin: 0 auto;}
+			
+			a {color: #666;text-decoration: none;}
+			
+			.aaa {border-bottom:1px palevioletred solid;}
+			
+			.b {border: 1px #666666 solid;}
+			
+			#div_top #span_2{height: 60px; background-color: #ece6e0;}
+			#div_top img {margin-left: 70px; margin-top: 13px; position: relative;}
+			
+			#div_top #span_2 {position: absolute;left: 106px;width: 126px;height: 60px;font-size: 18px;font-family: "黑体";
+				font-weight: 800;border-top: 2px #d8dbdc solid;}
+			#div_top #span_2 span a {position: absolute;left: 10px;top: 18px; color: #000000;}
+			#div_top #span_2 span a img {position: absolute;left: 27px;top: -10px;}
+			#div_top #span_2:hover {cursor: pointer;background-color: #FFFFFF;border-top: 2px purple solid;}
+			#div_top #span_2 ul {width: 126px; height: 120px; position: absolute;left: 0px; top: 58px; background-color: #FFFFFF; display: none;}
+			#div_top #span_2 ul li{list-style: none; width: 115px; height: 30px; padding-left: 10px; padding-top: 10px;}
+			#div_top #span_2 ul li a{font-size: 16px; font-weight: 400;}
+			#div_top #span_2 ul li:hover{background-color: #fafafa ;}
+			#div_top #span_2:hover ul{display: block;}
+			
+			#div_top #div_2 {position: absolute; left: 290px; top: 0px; width: 287px; height: 60px;}
+			#div_top #div_2 ul {width: 287px; height: 60px; float: left;}
+			#div_top #div_2 ul li{list-style: none; float: left; line-height: 60px; width: 80px; text-align: center;}
+			#div_top #div_2 ul li:hover{background-color: #FFFFFF; cursor: pointer;}
+			
+			#div_top #div_2 ul #li_1 {width: 78px; height: 60px;text-align: center; line-height: 60px;}
+			#div_top #div_2 ul #li_1 #div_1_1{ height: 325px; width: 220px; position: absolute; top: 60px; text-align: center; background-color: #FFFFFF; display: none;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li1 {height: 55px; line-height: 55px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li2 {height: 135px; line-height: 135px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li2 img {position: absolute; left: -18px; top: 45px; padding: 10px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li3 {height: 65px; line-height: 65px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li3 div {height: 35px; width: 170px; background-color: #f7f7f7; line-height: 35px; margin-left: 23px; margin-top: 10px;border: 1px #d8d8d8 solid;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li3 div a img {position: absolute; left: -30px; top: 190px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li4 {height: 65px; line-height: 65px;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li4 div {height: 35px; width: 170px; background-color: #f7f7f7; line-height: 35px; margin-left: 23px;border: 1px #d8d8d8 solid;}
+			#div_top #div_2 ul #li_1 #div_1_1 #div_li4 div a img {position: absolute; left: -17px; top: 253px;}
+			#div_top #div_2 ul #li_1:hover #div_1_1{display: block;}
+			#div_top #div_2 ul #li_1:hover {border-top: 2px purple solid;}
+			#div_top #div_2 ul #li_2:hover {border-top: 2px purple solid;}
+			#div_top #div_2 ul #li_3:hover {border-top: 2px purple solid;}
+			
+			#div_top #div_2 ul #li_2 #div_2_2 {width: 78px; height: 60px;text-align: center; line-height: 60px;}
+			#div_top #div_2 ul #li_2 #div_2_1{ height: 185px; width: 400px; position: absolute; top: 60px; background-color: #FFFFFF; display: none;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div {height: 135px; background-color: #FFFFFF;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right p span{display: none; position: absolute; left: 235px; top: 80px;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div:hover{background-color: #f2f2f2;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div:hover #div_top_right p span{display: block;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_left {height: 135px; width: 100px; position: absolute;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_left img {position: absolute; left: -60px; top: 0;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right { height: 135px; width: 300px; position: absolute; left: 100px; text-align: left;} 
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right p{line-height: 40px;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right #p_1 a:hover{color: #ed4259;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right #p_3 span a {color: #bf2c24;}
+			#div_top #div_2 ul #li_2 #div_2_1 #div_top #div_top_right #p_3 a:hover{color: #ed4259;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right #p_2 a {color: #3f5a93;}
+			#div_top #div_2 ul #li_2 #div_2_1 #top_div #div_top_right #p_2 a:hover{color: #2972cc;}
+			#div_top #div_2 ul #li_2 #div_2_1 #div_bottom {width: 400px; line-height: 35px; margin-top: 15px; background-color: #f2f2f2; }
+			#div_top #div_2 ul #li_2 #div_2_1 #div_bottom a:hover{color: #ed4259;}
+			#div_top #div_2 ul #li_2:hover #div_2_1{display: block;}
+			
+			#div_top #div_2 ul #li_3 #div_3_1{height: 260px; width: 440px; position: absolute; top: 60px; background-color: #FFFFFF; display: none;}
+			#div_top #div_2 ul #li_3 img{position: absolute; top: 5px; left: 95px;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_top_2 {text-align: left; height: 173px; margin-left: 20px;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_top_2 div{line-height: 30px; margin: 0;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_top_2 ul {width: 420px; height: 137px; margin: 0; padding: 0;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_top_2 ul li{list-style: none;float: left; width: 68px; text-align: left; line-height: 44px;}
+			
+			#div_top #div_2 ul #li_3 #div_3_1 #div_bottom_2 {text-align: left; margin-left: 20px;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_bottom_2 div {line-height: 30px; margin: 0;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_bottom_2 ul {width: 420px; height: 50px; margin: 0; padding: 0;}
+			#div_top #div_2 ul #li_3 #div_3_1 #div_bottom_2 ul li {list-style: none;float: left; width: 68px; text-align: left;line-height: 49px;}
+			#div_top #div_2 ul #li_3 #div_3_1 ul li a:hover{color: #ed4259;}
+			#div_top #div_2 ul #li_3:hover #div_3_1{display: block;}
+			
+			#div_top #div_serach {width: 190px; height: 60px; position: absolute;left: 900px; top: 0;}
+			#div_top #div_serach form{width: 190px; height: 60px;}
+			#div_top #div_serach form input{background-color: #efe4dd; float: left;margin: 0; width: 150px; height: 40px;line-height: 40px;position: absolute; top: 12px; border-top: none;border-left: none;border-right: none; outline: 0;}
+			#div_top #div_serach form button{float: left;margin: 0;width: 25px;height: 25px;border: 0; background: #FF8B00 url(img/b_16.png) no-repeat; position: absolute; left: 158px; top: 18px;}
+			#div_top #div_serach form button:hover {cursor: pointer;}  /*设置当鼠标放在按钮上出现的是‘手’*/
+			
+			#div_top #div_login {width: 190px; height: 60px; position: absolute;left: 1100px; top: 0;}
+			#div_top #div_login ul li{list-style: none; float: left; width: 55px; line-height: 60px; text-align: center;}
+			#div_top #div_login ul li a:hover{ color: #ed4259;}
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--
+        	描述：顶层导航栏的左边div；
+        -->
+		<div id="div_top">
+			<img src="img/a_1.jpg"/>
+			
+			<span id="span_2">
+				<span><a href="gun.html">起点中文网 <img src="img/b_1.jpg"/></a></span>
+				
+				<ul>
+					<li> <a href="gun.html">起点女生网</a> </li>
+					<li> <a href="gun.html">创世中文网</a> </li>
+					<li> <a href="gun.html">云起书院</a> </li>
+				</ul>
+			</span>
+			
+			<div id="div_2">
+				<ul>
+					<!--
+                    	描述：手机阅读列表部分
+                    -->
+					<li id="li_1">手机阅读
+						<div id="div_1_1">
+							<div id="div_li1" >扫描下载起点阅读客户端</div>
+							<div id="div_li2"><img src="img/b_3.png" style="width: 90px; height: 90px; border: 1px #D8DBDC solid;"/></div>
+							<div id="div_li3">
+								<div>
+									<a href="gun.html"><img src="img/b_10.png" /></a>
+								</div>
+							</div>
+							<div id="div_li4">
+								<div>
+									<a href="gun.html"><img src="img/b_12.png"/></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<!--
+                    	描述：最近阅读列表部分
+                    -->
+					<li id="li_2">最近阅读
+					
+						<div id="div_2_1">
+						<!--
+                        	描述：上方图书div
+                        -->
+							<div id="top_div">
+								
+								<div id="div_top_left">
+									<img src="img/b_13.png"/>
+								</div>
+								
+								<div id="div_top_right">
+									<p id="p_1"><a href="gun.html"><font style="font-size: 16px;">寒天帝</font></a></p>
+									<p id="p_2">最新章节：<a href="gun.html">第十一章&nbsp;望天峰上日初升</a></p>
+									<p id="p_3">
+										看到：<a href="gun.html">第一章&nbsp;沉沦地狱九万年</a>
+										
+										<span>
+											<a href="gun.html">继续阅读</a>
+										</span>
+									</p>
+									
+								</div>
+							</div>
+						<!--
+                        	描述：下方一个超链接
+                        -->
+							<div id="div_bottom">
+								<a href="gun.html">查看全部</a>
+							</div>
+						</div>
+					
+					</li>
+					<!--
+                    	描述：快速导航列表
+                    -->
+					<li id="li_3" style="width: 120px;">
+						<img src="img/b_15.png"/>快速导航
+						<div id="div_3_1">
+							<div id="div_top_2">
+								
+								<div>
+									<font style="font-size: 18px; font-weight: 900; color: #000000;">分类频道</font>
+								</div>
+								
+								<ul>
+									<li><a href="gun.html">奇幻</a></li>
+									<li><a href="gun.html">玄幻</a></li>
+									<li><a href="gun.html">武侠</a></li>
+									<li><a href="gun.html">仙侠</a></li>
+									<li><a href="gun.html">都市</a></li>
+									<li><a href="gun.html">职场</a></li>
+									<li><a href="gun.html">历史</a></li>
+									<li><a href="gun.html">军事</a></li>
+									<li><a href="gun.html">游戏</a></li>
+									<li><a href="gun.html">体育</a></li>
+									<li><a href="gun.html">科幻</a></li>
+									<li><a href="gun.html">灵异</a></li>
+									<li><a href="gun.html">二次元</a></li>
+									<li><a href="gun.html">完本</a></li>
+									<li><a href="gun.html">女生</a></li>
+									<li><a href="gun.html">三江</a></li>
+								</ul>
+							</div>
+							
+							<div id="div_bottom_2">
+								
+								<div>
+									<font style="font-size: 18px; font-weight: 900; color: #000000;">其它</font>
+								</div>
+								
+								<ul>
+									<li><a href="gun.html">投稿</a></li>
+									<li><a href="gun.html">签约</a></li>
+									<li><a href="gun.html">福利</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!--
+            	描述：搜索部分中间的div；
+            -->
+			<div id="div_serach">
+				
+				<form action="#" method="post">
+					<input type="text" placeholder="韩彦祖"><!--placeholder默认显示的字-->
+					<button type="submit"></button>
+				</form>
+			</div>
+			
+			<!--
+            	描述：登陆部分在顶层导航栏的右边的div；
+            -->
+			<div id="div_login">
+				
+				<ul>
+					<li><a href="gun.html">登录</a></li>
+					<li><a href="gun.html">注册</a></li>
+					<li><a href="gun.html">充值</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</body>
+</html>
